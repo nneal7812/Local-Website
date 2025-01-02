@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="transitionFunctions.js"></script>
+    <style type="text/css">
+        .special{
+            opacity:0.0;
+        }
+        .visible{
+            opacity:1.0;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: mediumblue;
+        }
+        .img {
+            display: flex;
+            background-image: url("home/bg_head2.png");
+            height: 144px;
+            border: thick solid;
+        }
+        .logo {
+            height: 140px;
+        }
+        .class1 {
+            width: 6%;
+            display: inline-block;
+            font-family: 'Segoe Script';
+            font-weight: bold;
+            border: medium solid;
+            border-top: hidden;
+            border-bottom: hidden;
+            padding-right: 2%;
+        }
+        h3 {
+            margin: 0;
+            margin-left: 20%;
+        }
+        .class2{
+            width:500px;
+            text-align:left;
+            margin: 0 auto;
+        }
+        .box1{
+            margin-left: auto;
+            margin-right: 0;
+        }
+        .box1 div{
+            width:200px;
+            height: 16.5%;
+            text-align:center;
+            background-color: #CCCCCC;
+            border: solid medium;
+        }
+        .empty_space{
+            padding-bottom: 170%;
+        }
+        .center_class{
+            text-align:center;
+        }
+        .menu_bar{
+            padding-left:7%;
+            height: 100px;
+            margin-bottom: 1%;
+        }
+        .menu1{
+            font-family: Arial;
+            font-weight: bold;
+            font-size: medium;
+            color: white;
+            border: 2px solid rgb(0, 0, 0);
+            text-align: center;
+            padding-top: 1%;
+            width: 11.25%;
+            height: 2em;
+            float: left;
+            background: mediumblue;
+        }
+        .menu1 a{
+           display: none;
+           color: white;
+           text-decoration: none;
+           border-top: solid medium #7d0505;
+        }
+        .menu1:hover a{
+            display:block;
+        }
+            .menu1 a:hover {
+                background-color: dodgerblue;
+            }
+            .menu1:hover a:first-child{
+                margin-top: 1em;
+            }
+        .multiple_images{
+            padding-left: 1%;
+            border: solid medium;
+            padding-right: 2%;
+            margin-right: 5%;
+        }
+        .health_1{
+            padding-top: 5%;
+            padding-bottom: 20%;
+        }
+        .health_1 a{
+            font-family: 'Segoe Script';
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            margin-top: -14%;
+            margin-left: 3%;
+        }
+        .health_2{
+            padding-bottom: 20%;
+        }
+        .health_2 a{
+            font-family:'Segoe Script';
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            margin-top: -18%;
+            margin-left: 3%;
+        }
+        .health_3{
+            padding-bottom: 3em;
+        }
+        .health_3 a{
+            font-family: 'Segoe Script';
+            font-size: 24px;
+            font-weight: bold;
+            display: block;
+            margin-top: -40%;
+            margin-left: 20%;
+        }
+        .all_images{
+            display:flex;
+        }
+        .weights{
+            background-color: #CCCCCC;
+            margin-left: 5%;
+            padding-left: 5%;
+            padding-right:5%;
+            text-align: center;
+            font-weight: bold;
+        }
+        .weights: img{
+            border:solid thick;
+        }
+    </style>
+</head>
+<body onload="effects()">
+    <!--banner area of index-->
+    <div class="img">
+        <img class="logo" src="home/logo.png" alt="Logo" />
+        <div class="class1">
+            <h3>Balanced</h3>
+            <h3>Living - a</h3>
+            <h3>Lifestyle!</h3>
+        </div>
+        <img style="margin-left: 4%" src="home/healthHeader2.png" alt="Health Header" />
+    </div>
+    <!--drop down menu-->
+    <div class="menu_bar">
+        <div class="menu1">
+            About Us
+            <a href="#">General</a>
+            <a href="#">Message</a>
+        </div>
+        <div class="menu1">
+            Products
+            <a href="store_index.html">E-Books</a>
+            <a href="#">Fitness</a>
+        </div>
+        <div class="menu1">
+            Fitness Centers
+            <a href="#">Anytime</a>
+            <a href="#">Conway Regional</a>
+        </div>
+        <div class="menu1">
+            Equipment
+            <a href="#">Total Gym</a>
+            <a href="#">Bow-Flex</a>
+        </div>
+        <div class="menu1">
+            Resturants
+            <a href="#">Healthy Dining</a>
+            <a href="#">Organic Fodds</a>
+            <a href="#">All Veggies</a>
+        </div>
+        <div class="menu1">
+            Members
+            <a href="#">Log In</a>
+            <a href="#">Reset Password</a>
+            <a href="#">Membership</a>
+        </div>
+        <div class="menu1">
+            Visitors
+            <a href="#">Registration</a>
+            <a href="#">Festival Pictures</a>
+            <a href="blog.php">Blogs</a>
+        </div>
+        <div class="menu1">
+            Contact Us
+            <a href="#">Our Store</a>
+            <a href="#">Other Vendors</a>
+        </div>
+    </div>
+    <!--div container for images, mission statement, and contact information-->
+    <div class="all_images">
+        <div class="multiple_images">
+            <div class="health_1">
+                <img src="home/healthHeader3.jpg" height="150px" />
+                <a href="#">Current Activities</a>
+            </div>
+            <div class="health_2">
+                <img src="home/healthHeader4a.jpg" height="160px" />
+                <a href="#">CEO's Message</a>
+            </div>
+            <div class="health_3">
+                <img src="home/recipes.jpg" height="250px" />
+                <a href="#">Healthy<br />Recipes</a>
+            </div>
+        </div>
+            <div class="weights">
+                <h1>Mission Statement</h1>
+                <h4 class="class2">The Balance-Living Organization is completely committed 
+                to assisting you to a full and balanced lifestyle. 
+                Members have access to our knowledgeable advisors and 
+                trainers for assistance pertaining to health, fitness, 
+                parenting, financial and technical programming guidance. 
+                Our members our among the most successful and well 
+                balanced professionals, and we can do the same for you! 
+                Come join us and become Well Balanced Now!
+                </h4>  <br />
+                <img src="pics/0.png" id="pics" height="400px" /><br />
+                <p id="caption"></p>
+            </div>
+            <div class="box1">
+                <div>
+                    <h1>Office Hours</h1>
+                    Mon-Fri: 8:00 AM - 5:00 PM
+                </div>
+                <div>
+                    <h1>Address</h1>
+                    2312 Front Street
+                    Conway, Arkansas 72035
+                </div>
+                <div class="empty_space">
+                    <h1>Contact Us</h1>
+                    John Levine<br />
+                    501-350-3291
+                </div>
+            </div>
+    </div>
+</body>
+</html>

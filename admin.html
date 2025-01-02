@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style type="text/css">
+        .middle{
+            align-content:center;
+            border: solid thick;
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        table{
+            margin:auto;
+        }
+        .centerAlign{
+            text-align:center;
+        }
+        .resetButton{
+            margin-left:30%;
+        }
+        .submitButton{
+            float:right;
+            margin-right:30%;
+        }
+    </style>
+</head>
+<body>
+    <!--start here with the action for php processing-->
+    <form action="http://localhost/process.php" method="POST" enctype="multipart/form-data">
+        <h1 align="center">Administrative Blog Form</h1>
+        <div class="middle">
+            <table>
+                <tr>
+                    <td>Name: </td>
+                    <td><input type="text" maxlength="30" size="50" name="name"/></td>
+                </tr>
+                <tr>
+                    <td>Title: </td>
+                    <td><input type="text" maxlength="30" size="50" name="title" /></td>
+                </tr>
+                <tr>
+                    <td>Image: </td>
+                    <td><input id="image" type="file" name="image" size="50"/></td>
+                </tr>
+            </table>
+        </div>
+        <div class="centerAlign">
+            <h2>Enter Blog Below</h2>
+            <textarea cols="80" rows="20" name="blog" wrap="hard"></textarea><br />
+        </div>
+        <input class="resetButton" type="reset" value="Reset"/>
+        <input class="submitButton" type="submit" value="Submit" />
+    </form>
+</body>
+</html>
